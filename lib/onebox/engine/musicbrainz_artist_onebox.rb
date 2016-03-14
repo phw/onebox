@@ -34,7 +34,7 @@ module Onebox
         data[:area] = raw["area"]["name"] if raw["area"]
 
         if raw["life-span"]
-          data[:begin] = raw["life-span"]["begin"],
+          data[:begin] = raw["life-span"]["begin"]
           data[:end] = raw["life-span"]["end"]
 
           if !data[:end] && raw["life-span"]["ended"]
